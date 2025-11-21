@@ -23,19 +23,19 @@ function FeatureTiles() {
   ]
 
   return (
-    <section id="dashboards" className="relative bg-slate-950 py-20">
+    <section id="dashboards" className="relative bg-slate-50 py-20">
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <div className="mb-12 max-w-3xl">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">Built for revenue cycle teams</h2>
-          <p className="mt-3 text-teal-100/80">From denial prevention to cash acceleration—every view is crafted for clarity and speed.</p>
+          <h2 className="text-3xl font-bold text-slate-900 sm:text-4xl">Built for revenue cycle teams</h2>
+          <p className="mt-3 text-slate-600">From denial prevention to cash acceleration—every view is crafted for clarity and speed.</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
-            <div key={f.title} className="group rounded-2xl border border-teal-300/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-5 shadow-xl shadow-teal-500/5 transition hover:border-teal-300/20">
-              <div className="mb-4 text-xs font-semibold tracking-wide text-teal-300/80">{f.kpi}</div>
-              <h3 className="mb-2 text-lg font-semibold text-white">{f.title}</h3>
-              <p className="text-sm text-teal-100/70">{f.desc}</p>
+            <div key={f.title} className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md">
+              <div className="mb-4 text-xs font-semibold tracking-wide text-teal-700">{f.kpi}</div>
+              <h3 className="mb-2 text-lg font-semibold text-slate-900">{f.title}</h3>
+              <p className="text-sm text-slate-600">{f.desc}</p>
             </div>
           ))}
         </div>
